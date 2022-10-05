@@ -27,6 +27,8 @@ html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;}
 
+
+/* -----  HEADER  ----- */
 header{
     position: relative;
     display: flex;
@@ -34,7 +36,7 @@ header{
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 334px;
+    height: 350px;
     text-align: center;
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);}
 
@@ -46,7 +48,7 @@ header{
     width: 90%;
     min-width: 288px;
     max-width: 900px;
-    height: 218px;
+    height: 250px;
     margin-top: 40px;
     margin-bottom: 10px;
     text-align: center;
@@ -60,6 +62,7 @@ header{
 
 .header--info-description{
     margin-top: 35px;
+    margin-bottom: 35px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
@@ -67,8 +70,8 @@ header{
 
 .header--info-button{
     position: absolute;
-    top: 270px;
-    left: calc(50% - 118px);
+    top: 285px;
+    left: calc(50% - 112px);
     display: block ;
     margin-top: 40px;
     padding: 15px;
@@ -92,93 +95,104 @@ header{
     object-fit: cover;
     background-image: url(/Assets/icons/row.svg);}
 
-/*Content Main*/
+    /*----  Main  ----*/
 
 main{
     width: 100%;
+    min-width: 320px;
     height: auto;
     background-color: var( --off-white);}
 
+   /* ---- TASAS DE CAMBIO  ---- */ 
+
 .container-section-tasa-de-cambio{
-    width: 100%;
+    margin: auto;
+    width: 288px;
     height: auto;
     padding-top: 50px;
     padding-bottom: 40px;
     text-align: center;}
 
-/*-- Img, description tasas de cambio --*/
-
+    /*-- IMG-HERO TASA DE CAMBIO --*/
 .tasa-de-cambio-img{
-    width: 250px;
-    height: 200px;
+    min-width: 320px;
+    max-width:400px;
+    height: 280px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     background-image: url("/Assets/img/Bitcoin.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;}
 
+    /* --- DESCRIPCION TASA DE CAMBIO --- */
+
 .tasa-de-cambio-description{
     width: 100%;
-    min-width: 288px;
+    min-width: 320px;
     max-width: 900px;
     margin: 0 auto;}
 
-/* Title - parrafo*/
-
-.tasa-de-cambio-description-title{
-    margin-bottom: 30px;
-    font-size: 1.6rem;
-    font-weight: bold;
+.tasa-de-cambio-descripcion-title{
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 2.6rem;
+    font-weight: 700;
     line-height: 2.6rem;
     color: var(--black);}
 
 .tasa-de-cambio-descripcion-text{
-    margin-bottom:10px;
+    margin-bottom:40px;
     font-family: 'DM Sans';
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.8rem;
     color: #757575;}
 
-/*-- board-coins --*/
+    /*-- CONTENEDOR DE TABLAS  --*/
 
-.tasa-de-cambio-board{
-    width: 70%;
-    min-width: 235px;
-    max-width: 500px;
-    height: 360px;
+.tasa-de-cambio-table{
+    display: flex;
+    min-width: 288px;
+    max-width: 900px;
+    max-height: 600px;
     margin:  0 auto;
+    justify-content: space-around;
     font-family: "Inter",sans-serif;}
 
-.tasa-de-cambio-board h2{
+.tasa-de-cambio-table-title_money{
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);}
- 
-/*BOARD --> GRID */
 
-.tasa-de-cambio-board-coins{
+ 
+    /*  ----  TABLA DE MONEDAS  ----*/
+
+.tasa-de-cambio-table-coins_money{
+    margin: auto;
+    margin-right: 15px;
+    min-width: 180px;
+    height:170px;
     display:grid;
-    grid-template-columns: 100px 120px;
+    grid-template-columns:80px 100px;
     grid-template-rows: repeat(4,40px);
     gap: 2px 1px;
     justify-content: center;
-    align-content: center;}
+    align-content: center;
+    box-shadow: 0px 0px 12px -6px #282623 ;}
 
-/*style-general BOARD*/
-
-.tasa-de-cambio-board-coins div:nth-child(1),div:nth-child(3),div:nth-child(5),div:nth-child(7){
+.tasa-de-cambio-table-coins_money, div:nth-child(1), div:nth-child(3),div:nth-child(5),div:nth-child(7){
     letter-spacing: -0.02em;
-    font-size: 16px;
+    font-size: 13px;
     color: #B5B0AC;}
 
-.tasa-de-cambio-board-coins div:nth-child(2),div:nth-child(4),div:nth-child(6),div:nth-child(8){
+.tasa-de-cambio-table-coins_money, div:nth-child(2),div:nth-child(4),div:nth-child(6),div:nth-child(8){
     letter-spacing: -0.02em;
-    font-size: 14px;
-    color: #757575;}
+    font-size: 12px;
+    color: #3e3e3e;}
 
 .board-coins-item{
     display: grid;
@@ -205,17 +219,136 @@ main{
     margin-left: 10px;
     width: 15px;}
 
+    /*  ----   button money   ----*/
 .tasa-de-cambio-container-update-date{
     margin: 0 auto;
+    margin-right: 20px;
     padding: 8px;
-    min-width: 180px;
-    max-width: 200px;
-    margin-top: 30px;
-    border-radius: 4px;
+    min-width: 120px;
+    max-width: 190px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
     background-color: var(--soft-orange);}
 
 .tasa-de-cambio-update-date{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--black);}
+
+/* TABLA COMISIONES */
+.tasa-de-cambio-table-title_comisiones{
+    margin: auto;
+    margin-bottom: 15px;
+    width: 150px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);}
+
+.tasa-de-cambio-table-coins_comisiones{
+    margin: auto 5px 0px;
+    min-width: 180px;
+    height:170px;
+    display:grid;
+    grid-template-columns: 80px 100px;
+    grid-template-rows: repeat(4,40px);
+    gap: 2px 1px;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0px 0px 12px -6px #282623 ;}
+
+.tasa-de-cambio-board-coins_comisiones, div:nth-child(1),div:nth-child(3),div:nth-child(5),div:nth-child(7){
+    letter-spacing: -0.02em;
+    font-size: 14px;
+    color: #B5B0AC;}
+    
+.tasa-de-cambio-board-coins_comisiones, div:nth-child(2),div:nth-child(4),div:nth-child(6),div:nth-child(8){
+    letter-spacing: -0.02em;
+    font-size: 13px;
+    color: #3e3e3e;}
+
+/*Botton comisiones*/
+.tasa-de-cambio-container-update-date_comisiones{
+    margin: 0 auto;
+    margin-left: 10px;
+    padding: 8px;
+    min-width: 120px;
+    max-width: 190px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #bfdcf0;}
+    
+.tasa-de-cambio-update-date_comisiones{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--black);}
+
+/*BENEFICIOS*/
+.main-product-detail{
+    min-width: 350px;
+    height: 910px;
+    background-color: #201E1C;}
+
+/* Estilos GENERALES -- Titulos de Beneficios  */
+.main-product-detail h3{
+    color: #e7f5ff;}
+    
+/*Logo Beneficios*/
+.main-product-detail-logo{
+    position: relative;
+    margin: auto;
+    top: -12px;
+    display: block;
+    width: 20%;}
+
+.main-product-detail-logo img{
+    margin: auto;
+    display: block;
+    width: 40px;}
+
+/* ---- Primera Secction -- Beneficios ---- */
+.product-detail{    
+    margin: 50px auto;
+    min-width: 150px;
+    max-height: 94px;}
+
+.product-detail .product-detail__title{
+    margin: auto;
+    width: 50%;
+    min-width: 150px;
+    text-align: center;
+    font-size: 2rem;}
+
+.product-detail .product-detail__text{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--grey);}
+
+/* ----  ESTILOS GENERALES CARD-BLACK  ---- */
+
+.product-card-black{
+    border: 1px solid orangered;
+    margin: 20px auto;
+    padding: 20px;
+    padding-top: 30px;
+    width: 288px;
+    max-width: 320px;
+    height: 152px;}
+.product-card-black h3{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 1.6rem;}
+
+.product-card-black p{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--grey);
+}
 
