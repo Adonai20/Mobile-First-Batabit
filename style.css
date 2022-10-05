@@ -287,7 +287,10 @@ main{
 
 /*BENEFICIOS*/
 .main-product-detail{
-    min-width: 350px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+
     height: 910px;
     background-color: #201E1C;}
 
@@ -333,13 +336,14 @@ main{
 /* ----  ESTILOS GENERALES CARD-BLACK  ---- */
 
 .product-card-black{
-    border: 1px solid orangered;
     margin: 20px auto;
-    padding: 20px;
-    padding-top: 30px;
-    width: 288px;
+    padding: 5px 15px;
+    padding-top: 15px;
+    width: 320px;
     max-width: 320px;
-    height: 152px;}
+    height: 152px;
+    background-color: #282623;}
+
 .product-card-black h3{
     font-family: 'DM Sans';
     font-weight: 700;
@@ -347,8 +351,31 @@ main{
 
 .product-card-black p{
     margin-top: 10px;
+    width: 252px;
     font-size: 1.3rem;
     line-height: 1.8rem;
-    color: var(--grey);
-}
+    color: var(--grey);}
 
+
+/* ----  SECTION PLANS   ----*/
+
+/*--- PLANS--IMG ----*/
+
+.plans-memberships-img{
+    max-width: 437px;
+    min-width: 300px;
+    height: 387px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 516px;
+    background-image: url("/Assets/icons/bitcoinbabyV1.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;}
+
+.plans-memberships-payments{
+    width: 320px;
+    height: 409px;
+
+}
+   
