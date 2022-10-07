@@ -115,9 +115,8 @@ main{
 
     /*-- IMG-HERO TASA DE CAMBIO --*/
 .tasa-de-cambio-img{
-    min-width: 320px;
-    max-width:400px;
-    height: 280px;
+    min-width: 300px;
+    height: 200px;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -236,7 +235,7 @@ main{
     font-weight: 500;
     color: var(--black);}
 
-/* TABLA COMISIONES */
+/* TABLA COMISIONES 
 .tasa-de-cambio-table-title_comisiones{
     margin: auto;
     margin-bottom: 15px;
@@ -268,7 +267,7 @@ main{
     font-size: 13px;
     color: #3e3e3e;}
 
-/*Botton comisiones*/
+/*Botton comisiones
 .tasa-de-cambio-container-update-date_comisiones{
     margin: 0 auto;
     margin-left: 10px;
@@ -284,18 +283,19 @@ main{
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--black);}
-
+/*
 /*BENEFICIOS*/
 .main-product-detail{
     margin: auto;
     width: 100%;
     min-width: 320px;
-
     height: 910px;
     background-color: #201E1C;}
 
+
 /* Estilos GENERALES -- Titulos de Beneficios  */
 .main-product-detail h3{
+    min-width: 288px;
     color: #e7f5ff;}
     
 /*Logo Beneficios*/
@@ -306,7 +306,7 @@ main{
     display: block;
     width: 20%;}
 
-.main-product-detail-logo img{
+.main-product-detail-logo{
     margin: auto;
     display: block;
     width: 40px;}
@@ -319,7 +319,7 @@ main{
 
 .product-detail .product-detail__title{
     margin: auto;
-    width: 50%;
+    width: 288px;
     min-width: 150px;
     text-align: center;
     font-size: 2rem;}
@@ -328,7 +328,7 @@ main{
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 80%;
+    width: 288px;
     text-align: center;
     font-size: 1.6rem;
     color: var(--grey);}
@@ -339,7 +339,7 @@ main{
     margin: 20px auto;
     padding: 5px 15px;
     padding-top: 15px;
-    width: 320px;
+    width: 288px;
     max-width: 320px;
     height: 152px;
     background-color: #282623;}
@@ -360,22 +360,174 @@ main{
 /* ----  SECTION PLANS   ----*/
 
 /*--- PLANS--IMG ----*/
+.main-plans-memberships-container{
+    background-color: var(--off-white);}
 
 .plans-memberships-img{
-    max-width: 437px;
-    min-width: 300px;
-    height: 387px;
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
     margin: 0 auto;
     margin-bottom: 50px;
-    width: 516px;
+    text-align: center;
     background-image: url("/Assets/icons/bitcoinbabyV1.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;}
+    
+.plans-memberships-img_title{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);}
 
 .plans-memberships-payments{
-    width: 320px;
-    height: 409px;
+    min-width: 320px;
+    height: 409px;}
 
-}
-   
+.plans-memberships-title{
+    margin: auto;
+    padding-bottom: 20px;
+    width: 320px;
+    font-size: 2.3rem;
+    line-height:2rem;
+    text-align: center;}
+    
+.plans-memberships-text{
+    margin: auto;
+    width: 288px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--grey);}
+
+.plans-memberships-payment{
+    display: flex;
+    margin-top: 20px;}
+
+.memberships-payment{
+    margin: 25px auto;
+    width: 190px;
+    height: 247px;
+    left: 65px;
+    text-align: center;
+    border-radius: 8px;
+    background-color:   #FFFFFF;
+    box-shadow: 0px 0px 12px -6px #282623 ;}
+
+.payment-button_top{
+    margin: auto;
+    top: -15px;
+    position: relative;
+    display: block;
+    width: 110px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);}
+
+.payment-title{
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black);}
+
+.payment-secundary-container{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    align-content:flex-start;}
+
+.payment-secundary-dollar{
+    margin-right: 2px;
+    display: block;
+    align-self: flex-start;}
+
+.payment-secundary-price{
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--black);}
+
+.payment-text{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 170px;
+    font-size: 1.2rem;
+    color: #757575;}
+
+/*  ---   Button   ---*/
+
+.payment-button_botton{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding: 12px 6px;
+    width: 151px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid var(--bitcoin-orange);
+    background-color: #FAF8F7;}
+
+.payment-button_botton p{
+    margin-right: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--black);}
+
+
+footer{
+    display: flex;
+    min-width: 320px;
+    height: 150px;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--bitcoin-orange);}
+
+.footer-social{
+    width: 160px;
+    display: flex;
+    justify-content: space-evenly;}
+
+.footer-navigator-social{
+    font-family: 'DM Sans';
+    font-size: 1.4rem;
+    align-self: center;
+    list-style: none;
+    color: #FFFFFF;}
+
+.footer-navigator-social li{
+    margin: 10px auto;
+    margin-right: 15px;
+    line-height: 18px;}
+
+.footer-logo{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+/*  --- Logo ---*/
+
+.footer-log-img{
+    display: flex;
+    align-self: center;}
+
+.footer-log-img img:nth-child(1){
+    position: relative;
+    left: 8px;
+    top: 3px;}
+
+.footer-log-img img:nth-child(2){
+    position: relative;
+    right: 8px;
+    justify-self: center;
+    align-self: center;}
+
+.footer-logo p{
+    margin:0px auto;
+    color: #FFFFFF;}
